@@ -34,9 +34,10 @@ public class ForExample {
         // 팩토리얼) 5! -> 5 x 4 x 3 x 2 x 1
         System.out.println("\n정수를 하나 입력받아서 입력받은 정수까지의 팩토리얼 값을 구하세요.");
         Scanner sc = new Scanner(System.in);
+        System.out.println("정수를 입력해주세요.");
         int num = sc.nextInt();
         int f = 1;
-        for(int j=1; j<=num; j++) {
+        for(int j=num; j>=1; j--) {
             f *= j;
         }
         System.out.println(f);
