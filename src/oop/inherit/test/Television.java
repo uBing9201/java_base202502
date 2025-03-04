@@ -4,7 +4,7 @@ public class Television extends ElectronicProduct {
 
     int screenSize;
 
-    public Television(String productName, int price, String manufacturer, int screenSize) {
+    public Television(String productName, double price, String manufacturer, int screenSize) {
         super(productName, price, manufacturer);
         this.screenSize = screenSize;
     }
@@ -12,6 +12,6 @@ public class Television extends ElectronicProduct {
     @Override
     public void displayInfo() {
         super.displayInfo();
-        System.out.printf("\nScreen Size: %d inches", screenSize);
+        System.out.printf("\nScreen Size: %d inches", this.screenSize);
     }
 }
