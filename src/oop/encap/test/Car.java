@@ -30,7 +30,7 @@ public class Car {
     }
 
     public void setYear(int year) {
-        if(year > 2025) {
+        if(year < 1900 || year > 2025) {
             System.out.println("잘못된 연도 입력입니다.");
             return;
         }

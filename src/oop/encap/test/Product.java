@@ -33,12 +33,12 @@ public class Product {
         this.stock = stock;
     }
 
-    public void reduceStock(int stock) {
-        if(this.stock >= stock) {
-            this.stock -= stock;
-        }else{
-            System.out.println("재고수량 적은개수로 들어올때만 작동");
+    public void reduceStock(int quantity) {
+        if(quantity < 0 || this.stock < quantity) {
+            System.out.println("요청한 수량이 재고보다 많거나, 잘못된 수량 입니다.");
+            return;
         }
+        this.stock -= stock;
     }
 
 }
