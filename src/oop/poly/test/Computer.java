@@ -1,6 +1,6 @@
 package oop.poly.test;
 
-class Computer {
+public class Computer {
 
     private ComputerPart[] parts;
 
@@ -14,7 +14,10 @@ class Computer {
 
         ComputerPart[] newParts = new ComputerPart[parts.length + 1];
 
-        System.arraycopy(parts, 0, newParts, 0, parts.length);
+        for(int i = 0; i < parts.length; i++) {
+            newParts[i] = parts[i];
+        }
+//        System.arraycopy(parts, 0, newParts, 0, parts.length);
 
         newParts[parts.length] = part;
 

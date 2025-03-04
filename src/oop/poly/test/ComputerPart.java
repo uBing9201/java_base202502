@@ -1,6 +1,6 @@
 package oop.poly.test;
 
-class ComputerPart {
+public class ComputerPart {
 
     // 부품 이름
     protected String partName;
