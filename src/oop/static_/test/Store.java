@@ -1,7 +1,5 @@
 package oop.static_.test;
 
-import java.util.Queue;
-
 public class Store {
 
     // 총 판매액

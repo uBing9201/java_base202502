@@ -1,6 +1,6 @@
 package oop.static_.test;
 
-public class Product extends Store {
+public class Product {
 
     String productName;
     int price;
